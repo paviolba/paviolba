@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questionário em JavaScript</title>
+
+
+  <link rel="stylesheet" href="../CSS/quiz.css">
+
+
+
+
+</head>
+
+<body>
+    <center>
+
+
+        <h1>Teste seus conhecimentos e ganhe recompensas:</h1>
+
+
+        <form id="quizForm">
+
+
+            <div>
+                <label for="pergunta1">1. Qual é a principal atração turística de Jeri?</label><br><br>
+                <select type="text" id="ipergunta1" required>
+                    <br>
+
+                    <option value="pedrafurada">Pedra Furada</option>
+                    <option value="lagoaazul">Lagoa Azul</option>
+                    <option value="dunacentral">Duna central</option>
+                </select>
+
+            </div>
+            <br>
+            <div>
+
+
+                <label for="pergunta2">2. Quando foi criado o parque natural de Jeri?</label>
+                <br><br>
+                <select id="ipergunta2" required>
+                    <br>
+
+                    <option value="2000">2000</option>
+                    <option value="2002">2002</option>
+                    <option value="2007">2007</option>
+                </select>
+
+            </div>
+            <br>
+            <div>
+                <label for="pergunta3">3. Quantos hectáres tem o parque natural de Jeri?</label><br><br>
+                <select type="text" id="ipergunta3" required>
+                    <br>
+
+                    <option value="7452">7452</option>
+                    <option value="8521">8521</option>
+                    <option value="8416">8416</option>
+                </select>
+
+            </div>
+
+            <br>
+
+            <div>
+                <label for="pergunta4">4. Quando foi fundada a cidade de jijoca de jericoacoara?</label><br>
+                <select type="text" id="ipergunta4" required>
+                    <br>
+
+                    <option value="1991">1991</option>
+                    <option value="1990">1990</option>
+                    <option value="1998">1998</option>
+                </select>
+
+            </div>
+
+            <br>
+
+            <div>
+                <label for="pergunta4">5. Quais foram os primeiros habitantes de jeri?</label><br><br>
+                <select type="text" id="ipergunta5" required>
+                    <br>
+
+                    <option value="indios">índios</option>
+                    <option value="portugueses">Portugueses</option>
+                    <option value="holandeses">Holandeses</option>
+                </select>
+            </div>
+
+            <br>
+
+            <button type="button" id="ibutton" onclick="calcularPontuacao()">Enviar Respostas</button>
+        </form>
+
+        <br>
+
+        <div id="iresultado"></div>
+
+        <a href="Index.html">
+            <h2><img src="azul marinho.jpg" alt=""></h2>
+        </a>
+
+
+    </center>
+
+
+
+    <script src="../Javascript/quiz.js"></script>
+</body>
+
+</html>

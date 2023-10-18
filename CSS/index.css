@@ -1,0 +1,113 @@
+/* estilo.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+  
+    background-image: url(../Imagens/o-que-fazer-em-Jericoacoara-1.jpg);
+    opacity: 1;
+    color: rgb(110, 233, 39);
+  
+  }
+  
+  h1 {
+    color: #193328;
+  }
+  
+  p {
+    color: #666;
+    line-height: 1.5;
+  }
+  
+  a {
+    color: #0066cc;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  header {
+    background-color: #b7be52;
+    padding: 20px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  div {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    display: inline-flex;
+    margin-left: px;
+  }
+  
+  #idiv {
+    width: 550px;
+    height: 150px;
+    border: 3px solid rgb(104, 129, 87);
+    display: inline-flex;
+    margin-left: 10px;
+    background-color: #c3cc4b;
+    display: block;
+  
+  }
+  
+  #iimage {
+    margin-top:  10px;
+    margin-left: 340px;
+  }
+  
+  #ip {
+    color: #dfec21;
+  }
+  
+  #ibtc {
+    color: #302b2b;
+  }
+  
+  #iTarifas {
+    color: #666;
+  }
+  
+  #iimg {
+    margin-top: 10px;
+    margin-left: 10px;
+  
+  }
+  
+  #ih1 {
+    margin-top: 10px;
+    margin-left: 450px;
+    color: antiquewhite;
+  }
+  
+  #ibem {
+    color: #dfec21;
+  }
+
+  #ivideo{
+
+    border-radius: 80px;
+  }
+  
+  

@@ -1,0 +1,46 @@
+video {
+
+
+    width: 1920px;
+    height: 1080px;
+}
+
+button {
+    width: 60px;
+    height: 30px;
+    transition: 2s;
+}
+
+button:hover {
+    width: 120px;
+    height: 60px;
+}
+
+
+#idiv1 {
+
+
+    width: 500px;
+    height: 250px;
+    position: absolute;
+    margin-left: 30px;
+    margin-top: -950px;
+
+
+}
+
+
+#ivideo1 {
+    margin-left: 50px;
+    width: 400px;
+    height: 250px;
+    border-radius: 100px;
+    transition: 2s;
+}
+
+#ivideo1:hover {
+    margin-left: 50px;
+    width: 1000px;
+    height: 500px;
+    border-radius: 100px;
+}

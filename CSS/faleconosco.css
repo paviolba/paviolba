@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(../Imagens/foto-praia-da-atalaia-em-fernando-de-noronha-pe-brasil-8178.jpg);
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+h2 {
+
+    text-align: center;
+
+}
+
+.conteudoFormulario {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.grupoFormulario {
+    margin-bottom: 20px;
+}
+
+.formularioLabel {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.formularioInput {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.formularioTextarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.formularioSubmit {
+    position: relativea;
+    width: 420px;
+    height: 40px;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 5px solid black;
+}
+
+
+
+
+.formularioSubmit:hover {
+    background-color: #658f18;
+
+}

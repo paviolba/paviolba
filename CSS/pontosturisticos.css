@@ -1,0 +1,19 @@
+body {
+    background-color: rgb(78, 176, 194);
+}
+
+#iimagem {
+    border: 3px solid black;
+    border-radius: 50%;
+    align-items: center;
+    max-width: 100%;
+    height: auto;
+}
+
+#itexto {
+    font-size: 30px;
+}
+
+button {
+    background-color: aquamarine;
+}

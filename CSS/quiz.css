@@ -1,0 +1,23 @@
+body {
+
+    background-image: url(../Imagens/pellizzon-jeri-0168.jpg);
+}
+
+
+div {
+
+    background-image: url(../Imagens/Jericoacoara-Dicas-O-que-Fazer-em-Jeri-Capa.jpg);
+    width: 200px;
+    height: 80px;
+    background-color: aquamarine;
+    border: 3px solid black;
+    border-radius: 20px;
+}
+
+label {
+    justify-content: ;
+}
+
+#ibutton {
+    background-color: brown;
+}

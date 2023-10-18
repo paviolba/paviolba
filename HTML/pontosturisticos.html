@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria com Carrossel</title>
+    <style>
+        body {
+            background-color: aquamarine;
+
+
+        }
+
+
+        #iimagem {
+            text-align: center;
+        }
+
+        img {
+            margin-left: 400px;
+            display: none;
+            align-items: center;
+        }
+
+        p {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <div id="iimagem">
+            <img src="../Imagens/lagoaazul.jpg" alt="Imagem 1">
+            <img src="../Imagens/lagoaparai.jpg" alt="Imagem 2">
+            <img src="../Imagens/centro.webp" alt="Imagem 3">
+            <img src="../Imagens/pedrafurada.jpg" alt="Imagem 4">
+            <img src="../Imagens/dunacentral.jpg" alt="Imagem 5">
+            <h1>
+                <p>Lagoa Azul</p>
+                <p>Lagoa Paraíso</p>
+                <p>Centro</p>
+                <p>Pedra furada</p>
+                <p>Duna central</p>
+            </h1>
+            <button onclick="anterior()">Anterior</button>
+            <button onclick="proximo()">Próximo</button>
+
+            
+        </div>
+
+
+
+    </center>
+
+    <script>
+        let indiceAtual = 0;
+        const imagens = document.querySelectorAll("img");
+        const textos = document.querySelectorAll("p");
+
+        function exibirElemento(indice) {
+            imagens.forEach((imagem) => imagem.style.display = "");
+            textos.forEach((texto) => texto.style.display = "");
+
+            imagens[indice].style.display = "block";
+            textos[indice].style.display = "block";
+        }
+
+        function anterior() {
+            if (indiceAtual > 0) {
+                indiceAtual--;
+            } else {
+                indiceAtual = imagens.length - 1;
+            }
+            exibirElemento(indiceAtual);
+        }
+
+        function proximo() {
+            if (indiceAtual < imagens.length - 1) {
+                indiceAtual++;
+            } else {
+                indiceAtual = 0;
+            }
+            exibirElemento(indiceAtual);
+        }
+
+        // Exibir o primeiro elemento ao carregar a página
+        exibirElemento(indiceAtual);
+    </script>
+</body>
+
+</html>

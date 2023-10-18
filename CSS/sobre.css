@@ -1,0 +1,25 @@
+body {
+    background-color: rgb(73, 148, 123);
+}
+
+div {
+    width: 225px;
+    height: 450px;
+    border: 3px solid green;
+}
+
+h1 {
+    color: rgba(160, 221, 144, 0.973);
+}
+
+h2 {
+    color: rgba(50, 65, 16, 0.973);
+}
+
+select {
+    align-content: center;
+    width: 150px;
+    height: 30px;
+    background-color: aquamarine;
+    border: 3px solid green;
+}

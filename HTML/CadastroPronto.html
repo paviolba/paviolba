@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../CSS/cadastro.css">
+</head>
+
+<body>
+    <center>
+
+        <h1>Formulário de Hóspede</h1>
+        <div>
+            <form>
+                <label for="nome"><b>Nome:</b></label><br>
+                <input type="text" id="inome" name="nome" required onchange="verificarNome()">
+                <br>
+
+
+                <label for="sobrenome"><b>Sobrenome:</b></label><br>
+                <input type="text" id="isobrenome" name="sobrenome" required onclick="verificarSobrenome()">
+                <br>
+
+                <label for="idade"><b>Idade</b></label><br>
+                <input type="number" name="idade" id="iidade" required onblur="verificarIdade()">
+                <br>
+
+                <label for="email"><b>Email:</b></label><br>
+                <input type="email" name="email" id="iemail" required onchange="verificarEmail()">
+                <br>
+
+                <label for="telefone"><b>Telefone:</b></label><br>
+                <input type="tel" name="telefone" id="itelefone" required placeholder="(xx) xxxxx-xxxx"
+                    onchange="verificarTelefone()">
+                <br>
+
+                <label for="data"><b>DN</b></label><br>
+                <input type="date" name="DN" id="idn" required onchange="verificarData()">
+                <br>
+
+                <label for="cpf"><b>Cpf</b></label><br>
+                <input type="text" name="CPF" id="icpf" required   placeholder="xxx.xxx.xxx-xx"   onchange="verificarCpf()">
+                <br>
+
+                <label for="identidade"><b>Identidade</b></label><br>
+                <input type="text" name="identidade" id="iid" required onchange="verificarIdentidade()">
+                <br>
+
+                <label for="endereço"><b>Endereço:</b></label><br>
+                <input type="text" name="endereço" id="iendereço" required onchange="verificarEndereço()">
+                <br>
+
+                <label for="arquivo"><b>Envie comprovante de residência:</b></label><br>
+                <input type="file" name="arquivo" id="iarquivo" multiple><br>
+                <input type="submit" value="Enviar" id="isubmit"><br>
+
+
+
+                <label for="cidade"><b>Cidade:</b></label><br>
+                <input type="text" name="cidade" id="icidade" required onchange="verificarCidade()">
+                <br>
+
+
+                <label for="estado"><b>Estado:</b></label><br>
+                <select id="iestado" name="estado" required onblur="verificarEstado()">
+                    <option value="zero">--</option>
+                    <option value="um">AC</option>
+                    <option value="dois">AL</option>
+                    <option value="três">AP</option>
+                    <option value="quatro">AM</option>
+                    <option value="cinco">BA</option>
+                    <option value="seis">CE</option>
+                    <option value="sete">DF</option>
+                    <option value="oito">ES</option>
+                    <option value="nove">GO</option>
+                    <option value="dez">MA</option>
+                    <option value="onze">MT</option>
+                    <option value="doze">MS</option>
+                    <option value="treze">MG</option>
+                    <option value="quatorze">PA</option>
+                    <option value="quinze">PB</option>
+                    <option value="dezesseis">PR</option>
+                    <option value="dezessete">PE</option>
+                    <option value="dezoito">PI</option>
+                    <option value="dezenove">RJ</option>
+                    <option value="vinte">RN</option>
+                    <option value="vinte e um">RS</option>
+                    <option value="vinte e dois">RO</option>
+                    <option value="vinte e três">RR</option>
+                    <option value="vinte e quatro">SC</option>
+                    <option value="vinte e cinco">SP</option>
+                    <option value="vinte e seis">SE</option>
+                    <option value="vinte e sete">TO</option>
+                    <br>
+
+                </select>
+                <br>
+
+                <label for="cep"><b>CEP:</b></label><br>
+                <input type="text" name="cep" id="icep" required   placeholder="xxxxx-xxx" onblur="verificarCep()">
+                <br>
+
+                <label for="nomemae"><b>Nome mãe:</b></label><br>
+                <input type="text" name="nomemae" id="inomemae" required onchange="verificarNomeMãe()">
+                <br>
+
+                <label for="nomempai"><b>Nome pai:</b></label><br>
+                <input type="text" name="nomepai" id="inomepai" required onclick="verificarNomePai()">
+                <br>
+
+                <label for="criança"><b>Crianças:</b></label><br>
+                <br>
+                <select id="icriança" name="criança" required onblur="verificarCriança()">
+
+                    <option value="--">--</option>
+                    <option value="sim">sim</option>
+                    <option value="não">não<object data="" type=""></object></option>
+                    <br>
+                </select>
+                <br>
+
+                <label for="necessidade"><b>idade das crianças:</b></label><br>
+                <br>
+                <textarea id="iidadeCrianças" name="necessidade" required onchange="verificarNecessidade()"></textarea>
+                <br>
+
+
+                <label for="temNecessidade"><b>Possui necessidade especial:</b></label><br>
+                <br>
+                <select id="ipce" name="temNecessidade" required onchange="verificarTemNecessidade()">
+                    <br>
+                    <option value="--">--</option>
+                    <option value="sim">Sim</option>
+                    <option value="não">Não</option>
+                    <br>
+                </select>
+                <br>
+
+                <label for="necessidade1"><b>Descreva sua Necessidade:</b></label>
+                <br>
+                <textarea id="inecessidade" name="necessidade" required onchange="verificarNecessidade1()"></textarea>
+                <br>
+
+                <label for="animal"><b>Animal de estimação:</b></label><br>
+                <select id="ianimal" name="animal" required onchange="verificarAnimal()">
+                    <option value="--">--</option>
+                    <option value="sim">sim</option>
+                    <option value="não">não<object data="" type=""></object></option>
+                    <br>
+                </select>
+                <br>
+
+
+                <label for="quantidade"><b>Quantidade de quartos:</b></label><br>
+                <select id="iquartos" name="quantidade" required onchange="verificarQuantidade()">
+                    <option value="--">--</option>
+                    <option value="um">1</option>
+                    <option value="dois">2</option>
+                    <option value="três">3</option>
+                    <br>
+
+                </select>
+                <br>
+                <br>
+
+                <label for="quantidade1"><b>Quantidade de hóspedes:</b></label><br>
+                <select id="ihospedes" name="quantidade" required onblur="verificarQuantidade1()">
+                    <option value="--">--</option>
+                    <option value="dois">2</option>
+                    <option value="três">3</option>
+                    <option value="quatro">4</option>
+                    <option value="cinco">5</option>
+                    <option value="grupo">Grupo</option>
+                    <br>
+
+                </select>
+                <br>
+                <br>
+
+                <input type="submit" value="Enviar" id="isubmit" onclick="verificarCadastro()">
+        </div>
+        </form>
+
+    </center>
+
+
+    <script  src="../Javascript/cadastro.js"></script>
+
+</body>
+
+</html>

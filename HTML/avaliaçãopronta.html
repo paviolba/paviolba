@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questionário em JavaScript</title>
+
+
+    <link rel="stylesheet" href="../CSS/avaliação.css">
+
+
+
+</head>
+
+<body>
+    <center>
+
+        <h1>Avaliação</h1>
+
+       
+          <form id="quizForm">
+
+            <div>
+                <label for="pergunta1">1. Qual é o ponto forte do nosso hotel?</label><br><br>
+                <select type="text" id="ipergunta1" required onchange="verificarPergunta1()">
+
+
+                    <option value=""></option>
+                    <option value="acomodação">Acomodação</option>
+                    <option value="localização">Localização</option>
+                    <option value="café">Café da manhã</option>
+                    <option value="limpeza">Limpeza</option>
+                    <option value="atendimento">Atendimento</option>
+                    <option value="instalações">Instalações</option>
+                </select>
+
+            </div>
+            <div>
+
+
+                <label for="pergunta2">2. Qual é o ponto fraco do nosso hotel? ?</label><br><br>
+                <select id="ipergunta2" required onchange="verificarPergunta2()">
+
+                    <option value=""></option>
+                    <option value="acomodação">Acomodação</option>
+                    <option value="localização">Localização</option>
+                    <option value="café">Café da manhã</option>
+                    <option value="limpeza">Limpeza</option>
+                    <option value="atendimento">Atendimento</option>
+                    <option value="instalações">Instalações</option>
+                </select>
+
+
+            </div>
+            <div>
+                <label for="pergunta3">3. Qual a atração você mais gostou ?</label><br><br>
+                <select type="text" id="ipergunta3" required onchange="verificarPergunta3()">
+
+
+                    <option value=""></option>
+                    <option value="pedrafurada">Pedra furada</option>
+                    <option value="lagoas">Lagoas</option>
+                    <option value="dunas">Dunas</option>
+                    <option value="árvoredeitada">Árvore deitada</option>
+                    <option value="esportesdeaventura">Esportes radicais</option>
+                    <option value="passeios">Passeios</option>
+                </select>
+
+            </div>
+
+            <div>
+                <label for="pergunta4">4. Dê uma nota ao nosso hotel.</label><br><br>
+                <select type="text" id="ipergunta4" required onchange="verificarPergunta4()">
+
+
+                    <option value=""></option>
+                    <option value="seis">Seis</option>
+                    <option value="sete">Sete</option>
+                    <option value="oito">Oito</option>
+                    <option value="nove">Nove</option>
+                    <option value="dez">Dez</option>
+
+                </select>
+
+            </div>
+
+            <div>
+                <label for="pergunta5">5. Você recomendaria e/ou voltaria ao nosso hotel?<label><br><br>
+                        <select type="text" id="ipergunta5" required onchange="verificarPergunta5()">
+
+                            <option value=""></option>
+                            <option value="sim">Sim</option>
+                            <option value="não">Não</option>
+                        </select>
+            </div><br><br>
+
+            <button type="button" id="ibutton" onclick="calcularPontuacao()">
+                <h3>Enviar Respostas</h3>
+            </button>
+
+
+
+        </form>
+
+        
+            <a href="Index.html">
+                <h2><img src="azul marinho.jpg" alt=""></h2>
+            </a>
+
+
+    </center>
+
+
+
+    <script src="../Javascript/avaliação.js"></script>
+</body>
+
+</html>

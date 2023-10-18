@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+   <link rel="stylesheet" href="../CSS/Cotações.css">
+
+</head>
+
+<body>
+    <center>
+        <img src="Cotação.jpg" alt="">
+        <div id="idiv">
+            <H1>SELECIONE SUA HOSPEDAGEM</H1>
+
+            <a
+                href="https://www.booking.com/searchresults.pt-br.html?ss=Jericoacoara%2C+Cear%C3%A1%2C+Brasil&ssne=Itatiaia&ssne_untouched=Itatiaia&efdco=1&label=gog235jc-1">
+                <h1 id="ih1">CLIQUE AQUI</h1>
+            </a>
+        </div>
+
+
+        <h2>Qual o seu perfil ?</h2>
+        <div class="conteudoFormulario">
+
+            <div class="grupoFormulario">
+                <label class="formularioLabel" for="name">
+                    <h2>Nome:</h2>
+                </label>
+                <input class="formularioInput" type="text" id="iname" name="nome" required>
+            </div>
+            <div class="grupoFormulario">
+
+                <label for="">
+                    <h2>Selecione o que você mais te agrada:</h2>
+                </label><br>
+                <select type="text" id="ipergunta1" required onchange="verificar()">
+
+                    <option value=""></option>
+                    <option value="aventura">Aventura</option>
+                    <option value="família">Viagem em família</option>
+                    <option value="casal">Passeios românticos</option>
+                    <option value="gastronomia">Gastronomia regional</option>
+                    <option value="sossego">Locais isolados</option>
+                    <option value="balada">Programação noturna</option>
+                </select>
+
+            </div><br><br>
+
+            <button class="formularioSubmit" type="submit" id="submit" onclick="verificar()">Enviar</button>
+
+        </div><br><br>
+
+
+
+
+        <div id="idiv1">
+            <a href="Index.html">
+                <h2><img src="../Imagens/azul marinho.jpg" alt=""></h2>
+            </a>
+
+        </div>
+    </center>
+
+
+    <script src="../Javascript/cotações.js"></script>
+
+
+
+</body>
+
+</html>
